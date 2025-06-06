@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, MessageCircle, X } from 'lucide-react';
+import { Phone, X } from 'lucide-react';
 
 const FloatingCTAs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,14 +19,6 @@ const FloatingCTAs = () => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleWhatsAppClick = () => {
-    // Replace with your actual WhatsApp number and message
-    const phoneNumber = '1234567890'; // Your WhatsApp business number
-    const message = encodeURIComponent('Hi! I\'m interested in VIBE Dance Studio summer workshops for my child.');
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
   if (!isVisible) return null;
 
   return (
@@ -34,14 +26,6 @@ const FloatingCTAs = () => {
       {/* Expanded CTAs */}
       <div className={`transition-all duration-500 ${isExpanded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
         <div className="space-y-3 mb-4">
-          <Button 
-            className="bg-neon-green hover:bg-neon-green/90 text-dark-charcoal font-semibold px-6 py-3 rounded-full shadow-lg hover-lift"
-            onClick={handleWhatsAppClick}
-          >
-            <MessageCircle className="w-5 h-5 mr-2" />
-            Join WhatsApp
-          </Button>
-          
           <Button 
             className="bg-neon-blue hover:bg-neon-blue/90 text-dark-charcoal font-semibold px-6 py-3 rounded-full shadow-lg hover-lift"
             onClick={() => console.log('Call clicked')}
