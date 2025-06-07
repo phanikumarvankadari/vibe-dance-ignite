@@ -12,21 +12,42 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video Placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark-charcoal via-charcoal to-charcoal-light">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
-        
-        {/* Animated Background Elements */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-neon-blue/20 rounded-full blur-xl animate-float" />
-        <div className="absolute top-3/4 right-1/4 w-24 h-24 bg-neon-pink/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-1/4 left-1/3 w-20 h-20 bg-neon-green/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }} />
+    <section className="relative min-h-screen pt-20 overflow-hidden bg-charcoal">
+      {/* Background Video Container */}
+      <div className="absolute inset-0 z-0">
+        {/* Video Element */}
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted={isMuted}
+          playsInline
+          // Replace with your video source
+          src="media/bg.mp4"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60 bg-gradient-to-t from-charcoal via-transparent to-charcoal" />
+        {/* Animated Background Elements (optional, keep if desired) */}
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl" />
+        <div className="absolute top-3/4 right-1/4 w-48 h-48 bg-neon-pink/10 rounded-full blur-3xl" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-neon-green/10 rounded-full blur-3xl" style={{ animationDelay: '2s' }} />
       </div>
+
+      {/* Logo */}
+      <div className="absolute top-0 left-0 right-0 p-4 z-20 mb-[15%] mt-[3rem] flex justify-center">
+
+  <img
+    src="https://i.ibb.co/QFHk3HqM/logo3.png"
+    alt="VYBE Dance Workshops Logo"
+    className="h-10 scale-[3]"
+  />
+</div>
+
 
       {/* Video Controls */}
       <button
         onClick={() => setIsMuted(!isMuted)}
-        className="absolute top-6 right-6 z-20 p-3 bg-black/30 backdrop-blur-sm rounded-full hover:bg-black/50 transition-all duration-300 hover-glow"
+        className="absolute top-6 right-6 z-30 p-3 bg-black/30 backdrop-blur-sm rounded-full hover:bg-black/50 transition-all duration-300 hover-glow"
       >
         {isMuted ? (
           <VolumeX className="w-5 h-5 text-white" />
@@ -36,12 +57,12 @@ const HeroSection = () => {
       </button>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto mt-20">
         {/* Main Headline */}
         <div className={`mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-tight mb-4">
             <span className="block text-white animate-text-reveal stagger-1">Unleash Their</span>
-            <span className="block text-neon-gradient animate-text-reveal stagger-2 drop-shadow-lg">VIBE</span>
+            <span className="block text-neon-gradient animate-text-reveal stagger-2 drop-shadow-lg">VYBE</span>
             <span className="block text-white animate-text-reveal stagger-3">This Summer!</span>
           </h1>
         </div>
@@ -57,19 +78,22 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <Button 
-            size="lg" 
-            className="bg-neon-blue hover:bg-neon-blue/90 text-dark-charcoal font-bold px-8 py-4 text-lg rounded-xl hover-lift pulse-glow min-w-[200px]"
-          >
-            Explore Workshops
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <a href="#workshops" className="min-w-[200px]">
+            <Button
+              size="lg"
+              className="w-full bg-neon-blue hover:bg-neon-blue/90 text-dark-charcoal font-bold px-8 py-4 text-lg rounded-xl hover-lift pulse-glow"
+            >
+              Explore Workshops
+            </Button>
+          </a>
+         {/*
+          <Button
+            size="lg"
+            variant="outline"
             className="border-neon-pink text-neon-pink hover:bg-neon-pink hover:text-dark-charcoal font-bold px-8 py-4 text-lg rounded-xl hover-lift min-w-[200px] backdrop-blur-sm"
           >
             Get Early Bird Offer!
-          </Button>
+          </Button> */}
         </div>
 
         {/* Early Bird Banner */}
@@ -88,7 +112,7 @@ const HeroSection = () => {
           <div className="w-16 h-16 bg-gradient-to-br from-neon-green to-neon-blue rounded-xl rotate-45 opacity-80" />
         </div>
       </div>
-      
+
       <div className="absolute top-1/3 left-10 hidden lg:block" style={{ animationDelay: '1.5s' }}>
         <div className="animate-float">
           <div className="w-12 h-12 bg-gradient-to-br from-neon-pink to-neon-orange rounded-full opacity-70" />

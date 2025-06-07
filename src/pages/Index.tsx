@@ -16,7 +16,7 @@ const Index = () => {
       <ParentsSection />
       <JoinSection />
       <Footer />
-      <FloatingCTAs />
+      {/* <FloatingCTAs /> */}
     </div>
   );
 };

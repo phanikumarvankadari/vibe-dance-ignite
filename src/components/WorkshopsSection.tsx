@@ -26,36 +26,37 @@ const WorkshopsSection = () => {
 
   const workshops = [
     {
-      title: "Hip-Hop Foundations",
-      description: "Learn the basics of hip-hop with fun, age-appropriate moves that build confidence and coordination.",
-      duration: "4 weeks",
-      spots: "12 kids max",
-      level: "Beginner",
-      color: "from-neon-blue to-blue-600",
-      icon: "🎤"
+      "title": "RRR VYBE",
+      "description": "High-energy Indian movie dance for kids! Learn fun moves, build confidence, and shine like a star.",
+      "duration": "4 day workshop",
+      "spots": "10 places",
+      "level": "All Levels",
+      "color": "from-orange-500 to-red-600",
+      "icon": "🌟"
     },
     {
-      title: "Street Jazz Fun",
-      description: "Combine jazz technique with street style for an energetic and expressive dance experience.",
-      duration: "4 weeks", 
-      spots: "10 kids max",
-      level: "All Levels",
-      color: "from-neon-pink to-pink-600",
-      icon: "✨"
-    },
-    {
-      title: "Breaking Basics",
-      description: "Introduction to breakdancing with safe, beginner-friendly moves that wow friends and family.",
-      duration: "6 weeks",
-      spots: "8 kids max", 
-      level: "Beginner",
-      color: "from-neon-green to-green-600",
-      icon: "🌪️"
+      "title": "Epic VYBE",
+      "description": "Powerful Indian movie dance for adults. Master dynamic moves and express your passion on the dance floor.",
+      "duration": "Weekend workshop",
+      "spots": "9 places",
+      "level": "All Levels",
+      "color": "from-purple-700 to-indigo-800",
+      "icon": "🔥"
     }
+    //,
+    //{
+    //  title: "Breaking Basics",
+    //  description: "Introduction to breakdancing with safe, beginner-friendly moves that wow friends and family.",
+    //  duration: "6 weeks",
+    //  spots: "8 kids max", 
+    //  level: "Beginner",
+    //  color: "from-neon-green to-green-600",
+    //  icon: "🌪️"
+    //}
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 bg-charcoal">
+    <section id="workshops" ref={sectionRef} className="py-20 px-4 bg-charcoal">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -71,14 +72,14 @@ const WorkshopsSection = () => {
             <div className="bg-gradient-to-r from-neon-orange to-neon-pink p-0.5 rounded-2xl animate-pulse-glow">
               <div className="bg-dark-charcoal px-8 py-4 rounded-2xl">
                 <div className="text-white font-bold text-lg mb-1">🔥 Early Bird Special</div>
-                <div className="text-neon-orange font-semibold">Save 30% - Limited Time Only!</div>
+                <div className="text-neon-orange font-semibold">Whatsapp for amazing discounts!</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Workshop Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {workshops.map((workshop, index) => (
             <div
               key={workshop.title}
@@ -137,7 +138,7 @@ const WorkshopsSection = () => {
 
         {/* Benefits Section */}
         <div className={`bg-gradient-to-r from-charcoal-light to-charcoal p-8 rounded-2xl transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h3 className="text-2xl font-bold text-white mb-6 text-center">Why Choose VIBE Summer Workshops?</h3>
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Why Choose VYBE Summer Workshops?</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-neon-blue to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">

@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo/Brand */}
           <div className="mb-8">
             <h3 className="text-3xl font-display font-bold text-neon-gradient mb-2">
-              VIBE Dance Studio
+              VYBE Studio
             </h3>
             <p className="text-gray-400">
               Where creativity meets confidence through urban dance
@@ -19,16 +19,20 @@ const Footer = () => {
           {/* Social Media */}
           <div className="flex justify-center space-x-6 mb-8">
             <a 
-              href="#" 
+              href="https://www.instagram.com/vybe.dance/" 
               className="w-12 h-12 bg-charcoal rounded-full flex items-center justify-center hover-glow transition-all duration-300 group"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Instagram className="w-6 h-6 text-neon-pink group-hover:scale-110 transition-transform" />
             </a>
             <a 
-              href="#" 
+              href="https://whatsapp.com/channel/0029VbAnNrV4dTnGqM7syg3t" 
               className="w-12 h-12 bg-charcoal rounded-full flex items-center justify-center hover-glow transition-all duration-300 group"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Facebook className="w-6 h-6 text-neon-blue group-hover:scale-110 transition-transform" />
+              <img src="https://images.rawpixel.com/image_png_social_square/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvdjk4Mi1kNi0wNS5wbmc.png?s=zqdMctxOSnDXcrp_qqthTMYlndqdROeqpcE3_RoRlLI" alt="WhatsApp" className="w-6 h-6 group-hover:scale-110 transition-transform" />
             </a>
           </div>
 
@@ -36,7 +40,7 @@ const Footer = () => {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400">
-                © 2024 VIBE Dance Studio. All rights reserved.
+                © 2024 desifinn. All rights reserved.
               </div>
               <div className="flex space-x-6">
                 <a href="#" className="text-gray-400 hover:text-neon-blue transition-colors">

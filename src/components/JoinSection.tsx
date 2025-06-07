@@ -39,7 +39,7 @@ const JoinSection = () => {
       {/* Background Elements */}
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-neon-blue/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-neon-pink/10 rounded-full blur-3xl" />
-      
+
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Header */}
         <div className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -49,7 +49,7 @@ const JoinSection = () => {
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
             Join the VIBE community and give your child an unforgettable summer of dance, friends, and confidence building.
           </p>
-          
+
           {/* Urgency Banner */}
           <div className="inline-block bg-gradient-to-r from-neon-orange to-neon-pink p-0.5 rounded-full mb-8 animate-pulse-glow">
             <div className="bg-dark-charcoal px-6 py-3 rounded-full">
@@ -65,29 +65,29 @@ const JoinSection = () => {
             <div className="bg-charcoal-light p-8 rounded-2xl border border-gray-700/50">
               <div className="flex items-center mb-6">
                 <Mail className="w-6 h-6 text-neon-blue mr-3" />
-                <h3 className="text-2xl font-bold text-white">Get Workshop Updates</h3>
+                <h3 className="text-2xl font-bold text-white">Get earlybird offers</h3>
               </div>
-              
+
               <form onSubmit={handleEmailSubmit} className="space-y-4">
                 <div>
                   <Input
                     type="email"
-                    placeholder="Enter your email address"
+                    placeholder="Drop your email "
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-charcoal border-gray-600 text-white placeholder-gray-400 h-12 text-lg"
                     required
                   />
                 </div>
-                <Button 
+                <Button
                   type="submit"
                   className="w-full bg-neon-blue hover:bg-neon-blue/90 text-dark-charcoal font-bold py-3 h-12 text-lg rounded-xl hover-glow"
                 >
-                  Sign Up for Updates
+                  Submit
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </form>
-              
+
               <p className="text-gray-400 text-sm mt-4 text-center">
                 Be the first to know about new workshops and special offers
               </p>
@@ -103,23 +103,25 @@ const JoinSection = () => {
                 <h3 className="text-2xl font-bold text-white">Join Our Community</h3>
               </div>
               <p className="text-gray-300 mb-6">
-                Connect with other VIBE families, get updates, and share your dancer's progress in our exclusive WhatsApp group.
+                Connect with other VYBE families, get updates, and share your dancer's progress in our exclusive WhatsApp group.
               </p>
-              <Button className="w-full bg-neon-green hover:bg-neon-green/90 text-dark-charcoal font-bold py-3 h-12 text-lg rounded-xl hover-lift">
-                Join WhatsApp Group
-              </Button>
+              <a href="https://chat.whatsapp.com/L0uEWAxefgN2ZVzf54dTCJ" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-neon-green hover:bg-neon-green/90 text-dark-charcoal font-bold py-3 h-12 text-lg rounded-xl hover-lift">
+                  Join WhatsApp Group
+                </Button>
+              </a>
             </div>
 
-            {/* Direct Registration */}
-            <div className="bg-gradient-to-br from-neon-pink/20 to-neon-orange/20 p-8 rounded-2xl border border-neon-pink/30">
-              <h3 className="text-2xl font-bold text-white mb-4">Ready to Register?</h3>
+            {/* Direct Registration
+            <div className="bg-gradient-to-br from-neon-pink/20 to-neon-orange/20 p-8 rounded-2xl border border-neon-pink/30" >
+              <h3 className="text-2xl font-bold text-white mb-4">Want to Register?</h3>
               <p className="text-gray-300 mb-6">
                 Skip the wait and secure your child's spot in our summer workshops today.
               </p>
               <Button className="w-full bg-gradient-to-r from-neon-pink to-neon-orange hover:opacity-90 text-white font-bold py-3 h-12 text-lg rounded-xl hover-glow">
-                Register Now - Save 30%
+                DM us now
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
 

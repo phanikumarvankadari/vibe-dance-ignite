@@ -53,7 +53,7 @@ const ParentsSection = () => {
   const testimonials = [
     {
       name: "Sarah M.",
-      text: "My daughter has grown so much in confidence since joining VIBE. She can't wait for summer workshops!",
+      text: "My daughter has grown so much in confidence since joining VYBE. She can't wait for summer workshops!",
       rating: 5
     },
     {
@@ -74,10 +74,10 @@ const ParentsSection = () => {
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-            Why Parents <span className="text-neon-gradient">Trust VIBE</span>
+            Why Parents <span className="text-neon-gradient">Trust VYBE</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Peace of mind meets endless fun. Here's why families choose VIBE for their children's dance journey.
+            Peace of mind meets endless fun. Here's why families choose VYBE for their children's dance journey.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ const ParentsSection = () => {
           ))}
         </div>
 
-        {/* Testimonials */}
+        {/* Testimonials 
         <div className={`transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h3 className="text-3xl font-bold text-white text-center mb-12">
             What Parents Are Saying
@@ -133,9 +133,9 @@ const ParentsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
-        {/* Trust Indicators */}
+        {/* Trust Indicators 
         <div className={`mt-16 bg-charcoal-light p-8 rounded-2xl transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
@@ -151,7 +151,7 @@ const ParentsSection = () => {
               <div className="text-gray-400">Safety Record</div>
             </div>
           </div>
-        </div>
+        </div>  */}
       </div>
     </section>
   );

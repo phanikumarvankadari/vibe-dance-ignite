@@ -30,30 +30,28 @@ const AboutSection = () => {
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-                About <span className="text-neon-gradient">VIBE</span>
+                About <span className="text-neon-gradient">VYBE</span>
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-neon-blue to-neon-pink mb-8" />
             </div>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              Founded by four passionate dancers (three boys and one amazing lady), VIBE Dance Studio 
-              is more than just a dance school—we're a vibrant community where creativity meets confidence.
-            </p>
+            VYBE was founded by four passionate dancers who believe in the power of movement. We're more than just workshops; we're a place where kids and young adults discover confidence, make friends, and express themselves through the joy of dance. </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
               Our philosophy is simple: create a fun, supportive, and energetic environment where every 
               child can discover their unique rhythm and unleash their inner dancer. We believe dance 
-              builds not just physical skills, but confidence, creativity, and lasting friendships.
+              builds not just physical skills, but confidence, creativity, and lasting friendships away from screens and digital life.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="text-center p-4 bg-charcoal-light rounded-xl hover-lift">
-                <div className="text-3xl font-bold text-neon-blue mb-2">200+</div>
-                <div className="text-gray-400">Happy Dancers</div>
+                <div className="text-3xl font-bold text-neon-blue mb-2">5</div>
+                <div className="text-gray-400">Dance styles</div>
               </div>
               <div className="text-center p-4 bg-charcoal-light rounded-xl hover-lift">
-                <div className="text-3xl font-bold text-neon-green mb-2">5+</div>
-                <div className="text-gray-400">Years Experience</div>
+                <div className="text-3xl font-bold text-neon-green mb-2">A decade</div>
+                <div className="text-gray-400">Experience</div>
               </div>
             </div>
           </div>
@@ -73,22 +71,22 @@ const AboutSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-blue to-neon-green rounded-full mx-auto mb-2" />
-                    <div className="text-white font-semibold">Marcus</div>
-                    <div className="text-gray-400 text-sm">Hip-Hop</div>
+                    <div className="text-white font-semibold">Shashi</div>
+                    <div className="text-gray-400 text-sm">Freestyle</div>
                   </div>
                   <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-pink to-neon-orange rounded-full mx-auto mb-2" />
-                    <div className="text-white font-semibold">Zara</div>
-                    <div className="text-gray-400 text-sm">Street Jazz</div>
+                    <div className="text-white font-semibold">Shanmukh</div>
+                    <div className="text-gray-400 text-sm">Freestyle</div>
                   </div>
                   <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-green to-neon-blue rounded-full mx-auto mb-2" />
-                    <div className="text-white font-semibold">Devon</div>
-                    <div className="text-gray-400 text-sm">Breaking</div>
+                    <div className="text-white font-semibold">Tanuja</div>
+                    <div className="text-gray-400 text-sm">Indian classical & Freestyle</div>
                   </div>
                   <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-orange to-neon-pink rounded-full mx-auto mb-2" />
-                    <div className="text-white font-semibold">Kai</div>
+                    <div className="text-white font-semibold">Phani</div>
                     <div className="text-gray-400 text-sm">Freestyle</div>
                   </div>
                 </div>
