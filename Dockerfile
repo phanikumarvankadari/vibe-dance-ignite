@@ -1,32 +1,31 @@
-docker push <your-dockerhub-username>/<image-name>
-# Stage 1: Build the application
-FROM oven/bun:1.1.17 as builder
+# Use a smaller base image for the builder stage
+FROM --platform=linux/amd64 node:20-alpine as builder
 
 WORKDIR /app
 
-# Copy package.json and bun.lockb and install dependencies
-COPY package.json bun.lockb ./
-RUN bun install
+# Copy package.json and package-lock.json and install dependencies
+COPY package.json package-lock.json ./
+RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
 
 # Build the application
-RUN bun run build
+RUN npm run build
 
-# Stage 2: Serve the built application
-FROM oven/bun:1.1.17 as runner
+# Use a smaller base image for the runner stage
+FROM --platform=linux/amd64 node:20-alpine as runner
 
 WORKDIR /app
 
 # Copy the built application from the builder stage
 COPY --from=builder /app/dist ./dist
 
-# Install a simple static file server
-RUN bun install -g serve
+# Set the environment to production
+ENV NODE_ENV production
 
 # Expose the port the app runs on
 EXPOSE 5173
 
 # Command to run the application
-CMD ["serve", "-s", "dist", "-l", "5173"]
+CMD ["npx", "serve", "-s", "dist", "-l", "5173"]
