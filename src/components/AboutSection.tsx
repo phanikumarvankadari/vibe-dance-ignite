@@ -74,16 +74,16 @@ const AboutSection = () => {
                     <div className="text-white font-semibold">Shashi</div>
                     <div className="text-gray-400 text-sm">Freestyle</div>
                   </div>
-                  <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
+                  {/* <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-pink to-neon-orange rounded-full mx-auto mb-2" />
                     <div className="text-white font-semibold">Shanmukh</div>
                     <div className="text-gray-400 text-sm">Freestyle</div>
-                  </div>
-                  <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
+                  </div> */}
+                  {/* <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-green to-neon-blue rounded-full mx-auto mb-2" />
                     <div className="text-white font-semibold">Tanuja</div>
                     <div className="text-gray-400 text-sm">Indian classical & Freestyle</div>
-                  </div>
+                  </div> */}
                   <div className="bg-charcoal p-4 rounded-lg text-center hover-glow">
                     <div className="w-12 h-12 bg-gradient-to-br from-neon-orange to-neon-pink rounded-full mx-auto mb-2" />
                     <div className="text-white font-semibold">Phani</div>
