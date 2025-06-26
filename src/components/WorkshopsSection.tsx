@@ -32,7 +32,7 @@ const WorkshopsSection = () => {
       "level": "All Levels",
       "color": "from-orange-500 to-red-600",
       "icon": "🌟",
-      "registerLink": "https://desifinn.art/event/rrr-vybe-5/register"
+      "registerLink": "https://api.whatsapp.com/send?phone=35845152921"
     }
   //,
   //  {
