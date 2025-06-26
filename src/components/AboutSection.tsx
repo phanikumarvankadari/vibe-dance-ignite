@@ -36,7 +36,7 @@ const AboutSection = () => {
             </div>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-            VYBE was founded by four passionate dancers who believe in the power of movement. We're more than just workshops; we're a place where kids and young adults discover confidence, make friends, and express themselves through the joy of dance. </p>
+            HeTeam was founded by passionate dancers who believe in the power of movement. We're more than just workshops; we're a place where kids and young adults discover confidence, make friends, and express themselves through the joy of dance. </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
               Our philosophy is simple: create a fun, supportive, and energetic environment where every 
@@ -61,11 +61,9 @@ const AboutSection = () => {
             <div className="relative">
               {/* Main Image Placeholder */}
               <div className="bg-gradient-to-br from-charcoal-light to-charcoal rounded-2xl p-8 hover-lift">
-                <div className="aspect-video bg-gradient-to-br from-neon-blue/20 to-neon-pink/20 rounded-xl mb-6 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-6xl mb-4">💃🕺</div>
+                    
                     <p className="text-gray-300">Our Founders & Team</p>
-                  </div>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">

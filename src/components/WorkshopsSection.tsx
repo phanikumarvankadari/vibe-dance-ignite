@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Star, Clock, Users, Award } from 'lucide-react';
@@ -29,20 +28,22 @@ const WorkshopsSection = () => {
       "title": "RRR VYBE",
       "description": "High-energy Indian movie dance for kids! Learn fun moves, build confidence, and shine like a star.",
       "duration": "4 day workshop",
-      "spots": "10 places",
-      "level": "All Levels",
-      "color": "from-orange-500 to-red-600",
-      "icon": "🌟"
-    },
-    {
-      "title": "Epic VYBE",
-      "description": "Powerful Indian movie dance for adults. Master dynamic moves and express your passion on the dance floor.",
-      "duration": "Weekend workshop",
       "spots": "9 places",
       "level": "All Levels",
-      "color": "from-purple-700 to-indigo-800",
-      "icon": "🔥"
+      "color": "from-orange-500 to-red-600",
+      "icon": "🌟",
+      "registerLink": "https://desifinn.art/event/rrr-vybe-5/register"
     }
+  //,
+  //  {
+  //    "title": "Epic VYBE",
+  //    "description": "Powerful Indian movie dance for adults. Master dynamic moves and express your passion on the dance floor.",
+  //    "duration": "Weekend workshop",
+  //    "spots": "9 places",
+  //    "level": "All Levels",
+  //    "color": "from-purple-700 to-indigo-800",
+  //    "icon": "🔥"
+  // }
     //,
     //{
     //  title: "Breaking Basics",
@@ -79,12 +80,12 @@ const WorkshopsSection = () => {
         </div>
 
         {/* Workshop Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 gap-8 mb-16">
           {workshops.map((workshop, index) => (
             <div
               key={workshop.title}
               className={`transition-all duration-1000 delay-${index * 200} ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
               }`}
             >
               <div className="bg-charcoal-light rounded-2xl p-6 hover-lift h-full border border-gray-700/50 hover:border-gray-600 transition-all duration-300">
@@ -128,9 +129,17 @@ const WorkshopsSection = () => {
                 </div>
 
                 {/* CTA Button */}
-                <Button className={`w-full bg-gradient-to-r ${workshop.color} hover:opacity-90 text-white font-semibold py-3 rounded-xl transition-all duration-300 hover-glow`}>
-                  Reserve Spot
-                </Button>
+                {workshop.registerLink ? (
+                  <a href={workshop.registerLink} target="_blank" rel="noopener noreferrer">
+                    <Button className={`w-full bg-gradient-to-r ${workshop.color} hover:opacity-90 text-white font-semibold py-3 rounded-xl transition-all duration-300 hover-glow`}>
+                      Reserve Spot
+                    </Button>
+                  </a>
+                ) : (
+                  <Button className={`w-full bg-gradient-to-r ${workshop.color} hover:opacity-90 text-white font-semibold py-3 rounded-xl transition-all duration-300 hover-glow`}>
+                    Reserve Spot
+                  </Button>
+                )}
               </div>
             </div>
           ))}

@@ -37,8 +37,8 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 right-0 p-4 z-20 mb-[15%] mt-[3rem] flex justify-center">
 
   <img
-    src="https://i.ibb.co/QFHk3HqM/logo3.png"
-    alt="VYBE Dance Workshops Logo"
+    src="src/media/heteamlogo.png"
+    alt="Heteam Logo"
     className="h-10 scale-[3]"
   />
 </div>
